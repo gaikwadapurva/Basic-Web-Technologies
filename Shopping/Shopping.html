@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Shopping</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "Shopping.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "Shopping.js"></script>
+    </head>
+
+    <body>
+        <fieldset id = "formBorder">
+        <h1 id = "pageHeading">Shopping</h1>
+        <form>
+            <div class="row">
+                <div class = "col-15">
+                    <label for = "fname">FirstName: </label>
+                </div>
+                <div class="col-70">
+                    <input type = "text" id = "fname" name = "fname">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class = "col-15">
+                    <label for = "lname">LastName: </label>
+                </div>
+                <div class="col-70">
+                    <input type = "text" id = "lname" name = "lname">
+                </div>
+            </div>
+            <br>
+            <p id = "address1-name"><b>Shipping Address</b></p>
+            <div class = "row">
+                <div class = "col-15">
+                    <label for = "shipping-address">Address: </label>
+                </div>
+                <div class = "col-70">
+                    <input type = "text" id = "shipping-address" name = "shipping-address">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-15">
+                    <label for = "shipping-city-state-zip">City, State, Zip: </label>
+                </div>
+                <div class = "col-70">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type = "text" id = "shipping-city" name = "shipping-city">
+                                &nbsp;
+                                <input type = "text" id = "shipping-state" name = "shipping-state">
+                                <input type = "text" id = "shipping-zip" name = "shipping-zip" minlength="6" maxlength="6">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <p id = "address2-name"><b>Billing Address</b></p>
+            <div class = "row">
+                <input type = "checkbox" id = "check" name = "check"> Billing address and Shipping Address are Same
+            </div>
+            <br>
+            <div class = "row">
+                <div class = "col-15">
+                    <label for = "billing-address">Address: </label>
+                </div>
+                <div class = "col-70">
+                    <input type = "text" id = "billing-address" name = "billing-address">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-15">
+                    <label for = "billing-city-state-zip">City, State, Zip: </label>
+                </div>
+                <div class = "col-70">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type = "text" id = "billing-city" name = "billing-city">
+                                &nbsp;
+                                <input type = "text" id = "billing-state" name = "billing-state">
+                                <input type = "text" id = "billing-zip" name = "billing-zip" minlength="6" maxlength="6">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+        </form>
+        </fieldset>
+    </body>
+</html>
