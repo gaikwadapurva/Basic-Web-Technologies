@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Watermark Effect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "Watermark.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "Watermark.js"></script>
+    </head>
+
+    <body>
+        <fieldset id = "formBorder">
+        <h1 id = "pageHeading">Watermark Effect</h1>
+        <form>
+            <div class="row">
+                <div class = "col-15">
+                    <label for = "fname">Firstname: </label>
+                </div>
+                <div class="col-70">
+                    <input type = "text" id = "fname" name = "fname" class = "watermark">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class = "col-15">
+                    <label for = "lname">Lastname: </label>
+                </div>
+                <div class="col-70">
+                    <input type = "text" id = "lname" name = "lname" class = "watermark">
+                </div>
+            </div>
+            <br>
+        </form>
+        <p><b>Note: Click on the TextBox to start typing. The watermark must go away.</b></p>
+        </fieldset>
+    </body>
+</html>
